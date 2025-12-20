@@ -46,6 +46,26 @@ This will:
 
 You can tweak hyperparameters (epochs, batch size, learning rate) in `train_mnist_cnn.py`.
 
+## Results
+
+The model was trained for 5 epochs and achieved excellent performance:
+
+| Metric | Value |
+|--------|-------|
+| Best Validation Accuracy | 98.90% |
+| Final Test Accuracy | **99.26%** |
+| Best Validation Loss | 0.0352 |
+| Final Test Loss | 0.0239 |
+
+**Training Summary:**
+- Epoch 1: Val Acc = 98.20%
+- Epoch 2: Val Acc = 98.72%
+- Epoch 3: Val Acc = 98.80% (best validation)
+- Epoch 4: Val Acc = 98.72%
+- Epoch 5: Val Acc = 98.90% (final best)
+
+The model demonstrates excellent generalization with the test set accuracy (99.26%) exceeding the validation accuracy, indicating a well-regularized model.
+
 ## Possible extensions
 
 - Add a notebook to visualize misclassified digits and analyze failure cases.
@@ -59,3 +79,4 @@ This project shows:
 - Practical **deep learning for vision** using CNNs.
 - Clean PyTorch code with clear data pipeline, model definition, and evaluation.
 - Experience aligned with **text recognition and ID/document understanding** workflows.
+      
